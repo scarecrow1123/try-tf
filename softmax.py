@@ -101,7 +101,7 @@ def main(argv=None):
         tf.initialize_all_variables().run()
         
         # Iterate and train.
-        for step in xrange(num_epochs * train_size // BATCH_SIZE)
+        for step in xrange(num_epochs * train_size // BATCH_SIZE):
     
             offset = (step * BATCH_SIZE) % train_size
 
